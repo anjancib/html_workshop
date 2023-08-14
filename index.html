@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio web page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li>about me</li>
-            <li>education</li>
-            <li>skills</li>
-            <li>opinion</li>
-            <li>help</li>
-            <li>contact</li>
+        <ul id="header">
+            <a href="#about_me"><li>about me</li></a>
+            <a href="#education"><li>education</li></a>
+            <a href="#skills"><li>skills</li></a>
+            <a href="#form"><li>opinion</li></a>
+            <a href="#help"><li>help</li></a>
+            <a href="#contact"><li>contact</li></a>
         </ul>
     </header>
     <main>
-    <div>
-    <img src="profile_pic.jpg" alt="profile picture">
+    <div id="about_me">
     <h1>Name :</h1>
     <h2>Anja Ncib </h2>
-    <h4>date of birth : 17/12/2003 </h4>
-    <a href="#contact"><h2> contact me </h2></a>
+    <h1>date of birth :</h1>
+    <h2>17/12/2003 </h2>
+    <img src="profile_pic.jpg" alt="profile picture" width="500px">
+    <a href="#contact"><h4> contact me </h4></a>
     </div>
-    <hr>
-    <div>
+    
+    <div class="class1" id="education">
         <h2> Education:</h2>
+        <br>
         <ul>
             <dl>
                 <li>
@@ -73,9 +76,10 @@
             </dl>
         </ul>
     </div>
-    <hr>
-    <div>
+    
+    <div class="class1" id="skills">
         <h2> Skills</h2>
+        <br>
         <table border="1">
             <tr>
                 <th>Industry knowlage</th>
@@ -94,18 +98,21 @@
             </tr>
         </table>
     </div>
-    <hr>
-    <div>
+    
+    <div id="clubs">
         <h2> clubs :</h2>
         <p>
             This year, I've enthusiastically thrown myself into an array of clubs that have truly ignited my passion and motivation. These diverse clubs have provided me with an avenue to explore my interests and connect with like-minded individuals who share my enthusiasm. From the moment I joined, I felt an unwavering drive to contribute and participate actively in each club's activities. The sense of belonging and purpose that I've found within these clubs has spurred me on to dedicate myself wholeheartedly. Whether it's the camaraderie of the debate club, the creative energy of the art club, or the collaborative spirit of the community service club, I'm thrilled to be part of these vibrant communities and can't wait to see the impact we'll collectively make. My commitment is fueled by the opportunity to learn, grow, and make a difference, and I'm genuinely excited to continue channeling my motivation into these clubs throughout the year.
 
         </p>
     </div>
-    <hr>
-    <hr>
-    <div>
-        <p> I would like to know your opinion about this website please fill the form </p>
+    
+    
+    <div id="form">
+        <h3> I would like to know your opinion about this website please fill the form </h3>
+        <br>
+        <br>
+        <br>
         <form>
             <label> Name:</label>
             <input type="text" name="first name" placeholder="Type your name here" />
@@ -114,15 +121,17 @@
             <label> date of birth:</label>
             <input type="date"/>
             <br>
+            <br>
+            <br>
             <textarea name="message" cols="30" rows="5">write your opinion here
             </textarea>
 
         </form>
     </div>
-    <hr>
-    <div>
-        <h4> if you want to make a website like mine this video will help you  </h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MDLn5-zSQQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <div id="help">
+        <h1> if you want to make a website like mine this video will help you  </h1>
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/MDLn5-zSQQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </div>
     </main>
@@ -130,7 +139,7 @@
         <div id="contact">
             <h2> Contact :</h2>
             <ul>
-                <a href="https://www.facebook.com/"><li> Facebook </li></a>
+                <a href="https://www.facebook.com/"><li> Facebook </li>
                 <a href="https://www.linkedin.com/in/anja-ncib-b14300258/"><li> Linkedin </li></a>
                 <li>Numero du telephone : 56651686 </li>
             </ul>
